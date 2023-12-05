@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Image</title>
+  <style>
+    body {
+      background-image: url();
+      background-repeat: no-repeat;
+      background-size: cover; /* Adjust as needed */
+
+       /* Adjust as needed */
+    }
+  </style>
+</head>
+<body bgcolor="lightcyan">
+    <center>
+    <h1 style="color: darkorange;">Document Classification</h1>
+    <h1 style="color: darkorange;">A Complete Guide</h1>
+    <h3 style="color: forestgreen;">BBC Document Classification Model</h3>
+    <form method="POST" action="/prediction" enctype="multipart/form-data">
+        <label for="file">Upload Document File:</label>
+        <br>
+        <input type="file" name="file" id="file" accept=".txt" required>
+        <br>
+        <br>
+        <input type="submit" value="Classify Document">
+        <br>
+        <br>
+        <p style="color: blue;">
+            {{result}}
+        </p>
+    </form>
+    </center>
+    
+
+</body>
+</html>
